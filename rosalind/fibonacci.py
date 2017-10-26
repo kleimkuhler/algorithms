@@ -15,4 +15,3 @@ def fib2(n):
     for i in range(0, n):
         a, b = b, b+a
     return a
-    
