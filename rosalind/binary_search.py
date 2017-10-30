@@ -1,5 +1,5 @@
 # Binary search that has no recursive calls that I like
-def bin_search(m, arr):
+def binary_search(m, arr):
     lo = 0
     hi = len(arr)
 
@@ -16,8 +16,7 @@ def bin_search(m, arr):
     return result
     
 # with open('rosalind_bins.txt') as f:
-# with open('/home/kleimkuhler/Downloads/rosalind_bins.txt') as f:
-with open('/home/kleimkuhler/Downloads/rosalind_bins.txt') as f:
+with open('/Users/kleimkuhler/Downloads/rosalind_bins.txt') as f:
     lines = f.read().splitlines()
     n = int(lines[0])
     m = int(lines[1])
@@ -25,7 +24,7 @@ with open('/home/kleimkuhler/Downloads/rosalind_bins.txt') as f:
     arr_m = [int(x) for x in lines[3].split(' ')]
 
     for i in range(0, m):
-        print('{} '.format(bin_search(arr_m[i], arr_n)), end='')
+        print('{} '.format(binary_search(arr_m[i], arr_n)), end='')
 
     # Newline copy/pasting purposes ^_^
     print()
