@@ -38,8 +38,6 @@ def merge(a, b):
     
     return result
 
-    
-
 # with open('rosalind_ms.txt') as f:
 with open('/home/kleimkuhler/Downloads/rosalind_ms.txt') as f:
     lines = f.read().splitlines()
