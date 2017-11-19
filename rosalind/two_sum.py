@@ -71,7 +71,6 @@ with open('/home/kleimkuhler/Downloads/rosalind_.txt') as f:
     lines.pop(0)  # don't need first line of input
 
     for line in lines:
-        # print('{}'.format(two_sum([int(x) for x in line.split(' ')])))
-        print(' '.join(str(x) for x in two_sum([int(y) for y in line.split(' ')])))
+        print('{}'.format(two_sum([int(x) for x in line.split(' ')])))
 
     print()
