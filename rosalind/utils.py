@@ -35,7 +35,7 @@ def rosalind_index(A):
 
 def rosalind_pretty(s):
     s = str(s)
-    rep = {',': '', '(': '', ')': ''}
+    rep = {',': '', '(': '', ')': '', '[': '', ']': ''}
     for i, j in rep.items():
         s = s.replace(i, j)
     return s
