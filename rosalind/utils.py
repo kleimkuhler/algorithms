@@ -1,5 +1,10 @@
 import re
 
+from collections import (defaultdict, OrderedDict)
+from itertools import (chain, count)
+
+flatten = chain.from_iterable
+
 def Input(name):
     filename = '{}.txt'.format(name)
     return open(filename)
