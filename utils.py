@@ -1,9 +1,12 @@
+import math
 import re
 
 from collections import (defaultdict, OrderedDict)
 from itertools import (chain, count)
 
 flatten = chain.from_iterable
+
+inf = float('inf')
 
 def Input(name):
     filename = '{}.txt'.format(name)
