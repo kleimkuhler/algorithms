@@ -1,6 +1,5 @@
-from build_heap import heapify, build_heap
-from utils      import *
 from PriorityQueue import PriorityQueue
+from utils         import *
 
 name = 'bellman_ford'
 
