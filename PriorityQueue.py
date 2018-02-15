@@ -7,12 +7,12 @@ class PriorityQueue:
     prev = {}
     Q = []
 
-    def __init__(self, n):
+    def __init__(self, n, start=1):
         "Initialize node dists and prevs to infinity and None respectively."
         for node in range(1, n+1):
             self.dist[node] = inf
             self.prev[node] = None
-        self.dist[1] = 0
+        self.dist[start] = 0
 
     def _min(self, u, v):
         "Is the dist of u smaller than the dist of v."
